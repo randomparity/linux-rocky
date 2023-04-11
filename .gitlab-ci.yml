@@ -6,7 +6,7 @@
 
 include:
   - project: cki-project/pipeline-definition
-    ref: main
+    ref: production
     file: kernel_templates.yml
 
 workflow: !reference [.workflow]
@@ -16,15 +16,14 @@ workflow: !reference [.workflow]
     srpm_make_target: dist-srpm
     native_tools: 'true'
     architectures: 'x86_64 ppc64le aarch64 s390x'
-    POWER_BUILDER_SUFFIX: '-p9'
-    disttag_override: '.el9_0'
+    disttag_override: '.el9_1'
 
 .trigger_rhel9_pipeline:
   trigger:
     branch: rhel9
   variables:
     name: rhel9
-    builder_image: quay.io/cki/builder-rhel9.0
+    builder_image: quay.io/cki/builder-rhel9.1
     kpet_tree_family: rhel9
 
 .realtime_check_rhel9:
