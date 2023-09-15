@@ -5,6 +5,7 @@ deps_config := \
 	drivers/hwtracing/coresight/Kconfig \
 	arch/arm64/Kconfig.debug \
 	samples/Kconfig \
+	kernel/trace/rv/Kconfig \
 	kernel/trace/Kconfig \
 	kernel/rcu/Kconfig.debug \
 	lib/Kconfig.kfence \
@@ -130,6 +131,7 @@ deps_config := \
 	fs/ext4/Kconfig \
 	fs/ext2/Kconfig \
 	fs/Kconfig \
+	drivers/hte/Kconfig \
 	drivers/most/Kconfig \
 	drivers/counter/Kconfig \
 	drivers/interconnect/samsung/Kconfig \
@@ -157,6 +159,7 @@ deps_config := \
 	drivers/thunderbolt/Kconfig \
 	arch/x86/ras/Kconfig \
 	drivers/ras/Kconfig \
+	drivers/perf/arm_cspmu/Kconfig \
 	drivers/perf/hisilicon/Kconfig \
 	drivers/perf/Kconfig \
 	drivers/mcb/Kconfig \
@@ -337,6 +340,7 @@ deps_config := \
 	drivers/platform/x86/intel/int33fe/Kconfig \
 	drivers/platform/x86/intel/Kconfig \
 	drivers/platform/x86/dell/Kconfig \
+	drivers/platform/x86/amd/Kconfig \
 	drivers/platform/x86/Kconfig \
 	drivers/platform/Kconfig \
 	drivers/staging/hikey9xx/Kconfig \
@@ -420,7 +424,9 @@ deps_config := \
 	drivers/vhost/Kconfig \
 	drivers/vdpa/Kconfig \
 	drivers/virtio/Kconfig \
+	drivers/virt/coco/tdx-guest/Kconfig \
 	drivers/virt/coco/sev-guest/Kconfig \
+	drivers/virt/coco/efi_secret/Kconfig \
 	drivers/virt/acrn/Kconfig \
 	drivers/virt/nitro_enclaves/Kconfig \
 	drivers/virt/vboxguest/Kconfig \
@@ -486,6 +492,9 @@ deps_config := \
 	drivers/memstick/host/Kconfig \
 	drivers/memstick/core/Kconfig \
 	drivers/memstick/Kconfig \
+	drivers/ufs/host/Kconfig \
+	drivers/ufs/core/Kconfig \
+	drivers/ufs/Kconfig \
 	drivers/mmc/host/Kconfig \
 	drivers/mmc/core/Kconfig \
 	drivers/mmc/Kconfig \
@@ -561,6 +570,7 @@ deps_config := \
 	sound/soc/meson/Kconfig \
 	sound/soc/mediatek/Kconfig \
 	sound/soc/intel/boards/Kconfig \
+	sound/soc/intel/avs/boards/Kconfig \
 	sound/soc/intel/Kconfig \
 	sound/soc/img/Kconfig \
 	sound/soc/kirkwood/Kconfig \
@@ -633,6 +643,7 @@ deps_config := \
 	drivers/gpu/drm/meson/Kconfig \
 	drivers/gpu/drm/mxsfb/Kconfig \
 	drivers/gpu/drm/mediatek/Kconfig \
+	drivers/gpu/drm/logicvc/Kconfig \
 	drivers/gpu/drm/hisilicon/kirin/Kconfig \
 	drivers/gpu/drm/hisilicon/hibmc/Kconfig \
 	drivers/gpu/drm/hisilicon/Kconfig \
@@ -644,6 +655,7 @@ deps_config := \
 	drivers/gpu/drm/imx/Kconfig \
 	drivers/gpu/drm/sti/Kconfig \
 	drivers/gpu/drm/bridge/synopsys/Kconfig \
+	drivers/gpu/drm/bridge/imx/Kconfig \
 	drivers/gpu/drm/bridge/cadence/Kconfig \
 	drivers/gpu/drm/bridge/adv7511/Kconfig \
 	drivers/gpu/drm/bridge/analogix/Kconfig \
@@ -683,6 +695,7 @@ deps_config := \
 	drivers/gpu/drm/arm/display/Kconfig \
 	drivers/gpu/drm/arm/Kconfig \
 	drivers/gpu/drm/i2c/Kconfig \
+	drivers/gpu/drm/display/Kconfig \
 	drivers/gpu/drm/Kconfig \
 	drivers/gpu/ipu-v3/Kconfig \
 	drivers/gpu/host1x/Kconfig \
@@ -972,6 +985,20 @@ deps_config := \
 	drivers/net/plip/Kconfig \
 	drivers/net/pcs/Kconfig \
 	drivers/net/mdio/Kconfig \
+	drivers/net/can/usb/Kconfig \
+	drivers/net/can/spi/mcp251xfd/Kconfig \
+	drivers/net/can/spi/Kconfig \
+	drivers/net/can/softing/Kconfig \
+	drivers/net/can/sja1000/Kconfig \
+	drivers/net/can/rcar/Kconfig \
+	drivers/net/can/peak_canfd/Kconfig \
+	drivers/net/can/mscan/Kconfig \
+	drivers/net/can/m_can/Kconfig \
+	drivers/net/can/ifi_canfd/Kconfig \
+	drivers/net/can/ctucanfd/Kconfig \
+	drivers/net/can/cc770/Kconfig \
+	drivers/net/can/c_can/Kconfig \
+	drivers/net/can/Kconfig \
 	drivers/net/phy/Kconfig \
 	drivers/net/ipa/Kconfig \
 	drivers/net/hippi/Kconfig \
@@ -993,6 +1020,7 @@ deps_config := \
 	drivers/net/ethernet/sis/Kconfig \
 	drivers/net/ethernet/silan/Kconfig \
 	drivers/net/ethernet/sgi/Kconfig \
+	drivers/net/ethernet/sfc/siena/Kconfig \
 	drivers/net/ethernet/sfc/falcon/Kconfig \
 	drivers/net/ethernet/sfc/Kconfig \
 	drivers/net/ethernet/seeq/Kconfig \
@@ -1124,7 +1152,6 @@ deps_config := \
 	drivers/scsi/qedi/Kconfig \
 	drivers/scsi/qla4xxx/Kconfig \
 	drivers/scsi/qla2xxx/Kconfig \
-	drivers/scsi/ufs/Kconfig \
 	drivers/scsi/smartpqi/Kconfig \
 	drivers/scsi/mpi3mr/Kconfig \
 	drivers/scsi/mpt3sas/Kconfig \
@@ -1154,6 +1181,7 @@ deps_config := \
 	drivers/misc/echo/Kconfig \
 	drivers/misc/genwqe/Kconfig \
 	drivers/misc/vmw_vmci/Kconfig \
+	drivers/misc/mei/pxp/Kconfig \
 	drivers/misc/mei/hdcp/Kconfig \
 	drivers/misc/mei/Kconfig \
 	drivers/misc/altera-stapl/Kconfig \
@@ -1165,6 +1193,7 @@ deps_config := \
 	drivers/misc/Kconfig \
 	drivers/nvme/target/Kconfig \
 	drivers/nvme/host/Kconfig \
+	drivers/nvme/common/Kconfig \
 	drivers/nvme/Kconfig \
 	drivers/block/rnbd/Kconfig \
 	drivers/s390/block/Kconfig \
@@ -1207,8 +1236,10 @@ deps_config := \
 	drivers/firmware/cirrus/Kconfig \
 	drivers/firmware/broadcom/Kconfig \
 	drivers/firmware/arm_ffa/Kconfig \
+	drivers/firmware/arm_scmi/Kconfig \
 	drivers/firmware/Kconfig \
 	drivers/connector/Kconfig \
+	drivers/bus/mhi/ep/Kconfig \
 	drivers/bus/mhi/host/Kconfig \
 	drivers/bus/mhi/Kconfig \
 	drivers/bus/fsl-mc/Kconfig \
@@ -1266,19 +1297,6 @@ deps_config := \
 	net/bluetooth/bnep/Kconfig \
 	net/bluetooth/rfcomm/Kconfig \
 	net/bluetooth/Kconfig \
-	drivers/net/can/usb/Kconfig \
-	drivers/net/can/spi/mcp251xfd/Kconfig \
-	drivers/net/can/spi/Kconfig \
-	drivers/net/can/softing/Kconfig \
-	drivers/net/can/sja1000/Kconfig \
-	drivers/net/can/rcar/Kconfig \
-	drivers/net/can/peak_canfd/Kconfig \
-	drivers/net/can/mscan/Kconfig \
-	drivers/net/can/m_can/Kconfig \
-	drivers/net/can/ifi_canfd/Kconfig \
-	drivers/net/can/cc770/Kconfig \
-	drivers/net/can/c_can/Kconfig \
-	drivers/net/can/Kconfig \
 	net/can/j1939/Kconfig \
 	net/can/Kconfig \
 	drivers/net/hamradio/Kconfig \
@@ -1410,13 +1428,13 @@ endif
 ifneq "$(OBJCOPY)" "scripts/dummy-tools/objcopy"
 include/config/auto.conf: FORCE
 endif
+ifneq "$(PAHOLE)" "pahole"
+include/config/auto.conf: FORCE
+endif
 ifneq "$(SRCARCH)" "arm64"
 include/config/auto.conf: FORCE
 endif
 ifneq "$(AR)" "scripts/dummy-tools/ar"
-include/config/auto.conf: FORCE
-endif
-ifneq "$(PAHOLE)" "pahole"
 include/config/auto.conf: FORCE
 endif
 
