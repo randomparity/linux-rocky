@@ -1,9 +1,9 @@
 {
-  "nvr": "kernel-5.14.0-284.30.1.el9_2",
-  "tag": "rhel9-5.14.0-284.30.1.el9_2",
+  "nvr": "kernel-5.14.0-362.8.1.el9_3",
+  "tag": "rhel9-5.14.0-362.8.1.el9_3",
   "arch": "x86_64",
   "files": [
-    { "name": "kernel-5.14.0-284.30.1.el9_2.x86_64.resolved.config", "bytes": 215084, "sha256": "375053790e2b6b2e6a76a5626c7afd5f37635dfe898c7c5f0c86f840a2bb792f" },
-    { "name": "kernel-5.14.0-x86_64.config", "bytes": 215619, "sha256": "4a8ea2cd8b6884b851a78c3a507b81ad909a52d61a864698a07b507b1a6eda59" }
+    { "name": "kernel-5.14.0-362.8.1.el9_3.x86_64.resolved.config", "bytes": 219192, "sha256": "c30a2396571ae4f12ed33e88c00f63f7fbda66f813ded4788a9e7b1a106d4c60" },
+    { "name": "kernel-5.14.0-x86_64.config", "bytes": 219459, "sha256": "c8ed1e68fb2cd35c00b055fb53e2d742ad66ee1d754adc788c51f4fd7e86cfc9" }
   ]
 }

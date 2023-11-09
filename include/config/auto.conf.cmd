@@ -159,6 +159,7 @@ deps_config := \
 	drivers/thunderbolt/Kconfig \
 	arch/x86/ras/Kconfig \
 	drivers/ras/Kconfig \
+	drivers/perf/amlogic/Kconfig \
 	drivers/perf/arm_cspmu/Kconfig \
 	drivers/perf/hisilicon/Kconfig \
 	drivers/perf/Kconfig \
@@ -288,6 +289,7 @@ deps_config := \
 	drivers/soundwire/Kconfig \
 	drivers/rpmsg/Kconfig \
 	drivers/remoteproc/Kconfig \
+	drivers/iommu/iommufd/Kconfig \
 	drivers/iommu/intel/Kconfig \
 	drivers/iommu/amd/Kconfig \
 	drivers/iommu/Kconfig \
@@ -338,6 +340,8 @@ deps_config := \
 	drivers/platform/x86/intel/pmc/Kconfig \
 	drivers/platform/x86/intel/int3472/Kconfig \
 	drivers/platform/x86/intel/int33fe/Kconfig \
+	drivers/platform/x86/intel/int1092/Kconfig \
+	drivers/platform/x86/intel/ifs/Kconfig \
 	drivers/platform/x86/intel/Kconfig \
 	drivers/platform/x86/dell/Kconfig \
 	drivers/platform/x86/amd/Kconfig \
@@ -436,6 +440,7 @@ deps_config := \
 	drivers/vfio/mdev/Kconfig \
 	drivers/vfio/platform/reset/Kconfig \
 	drivers/vfio/platform/Kconfig \
+	drivers/vfio/pci/mlx5/Kconfig \
 	drivers/vfio/pci/Kconfig \
 	drivers/vfio/Kconfig \
 	drivers/uio/Kconfig \
@@ -477,6 +482,7 @@ deps_config := \
 	drivers/infiniband/hw/ocrdma/Kconfig \
 	drivers/infiniband/hw/mlx5/Kconfig \
 	drivers/infiniband/hw/mlx4/Kconfig \
+	drivers/infiniband/hw/mana/Kconfig \
 	drivers/infiniband/hw/irdma/Kconfig \
 	drivers/infiniband/hw/efa/Kconfig \
 	drivers/infiniband/hw/cxgb4/Kconfig \
@@ -537,6 +543,7 @@ deps_config := \
 	drivers/hid/intel-ish-hid/Kconfig \
 	drivers/hid/i2c-hid/Kconfig \
 	drivers/hid/usbhid/Kconfig \
+	drivers/hid/bpf/Kconfig \
 	drivers/hid/Kconfig \
 	sound/virtio/Kconfig \
 	sound/xen/Kconfig \
@@ -582,6 +589,7 @@ deps_config := \
 	sound/soc/bcm/Kconfig \
 	sound/soc/au1x/Kconfig \
 	sound/soc/atmel/Kconfig \
+	sound/soc/apple/Kconfig \
 	sound/soc/amd/acp/Kconfig \
 	sound/soc/amd/Kconfig \
 	sound/soc/adi/Kconfig \
@@ -913,9 +921,12 @@ deps_config := \
 	drivers/isdn/capi/Kconfig \
 	drivers/isdn/Kconfig \
 	drivers/net/hyperv/Kconfig \
+	drivers/net/thunderbolt/Kconfig \
 	drivers/net/wwan/Kconfig \
 	drivers/net/ieee802154/Kconfig \
 	drivers/net/wan/Kconfig \
+	drivers/net/wireless/virtual/Kconfig \
+	drivers/net/wireless/legacy/Kconfig \
 	drivers/net/wireless/quantenna/qtnfmac/Kconfig \
 	drivers/net/wireless/quantenna/Kconfig \
 	drivers/net/wireless/zydas/zd1211rw/Kconfig \
@@ -938,6 +949,7 @@ deps_config := \
 	drivers/net/wireless/ralink/Kconfig \
 	drivers/net/wireless/microchip/wilc1000/Kconfig \
 	drivers/net/wireless/microchip/Kconfig \
+	drivers/net/wireless/mediatek/mt76/mt7996/Kconfig \
 	drivers/net/wireless/mediatek/mt76/mt7921/Kconfig \
 	drivers/net/wireless/mediatek/mt76/mt7915/Kconfig \
 	drivers/net/wireless/mediatek/mt76/mt7615/Kconfig \
@@ -966,6 +978,7 @@ deps_config := \
 	drivers/net/wireless/broadcom/b43/Kconfig \
 	drivers/net/wireless/broadcom/Kconfig \
 	drivers/net/wireless/atmel/Kconfig \
+	drivers/net/wireless/ath/ath12k/Kconfig \
 	drivers/net/wireless/ath/ath11k/Kconfig \
 	drivers/net/wireless/ath/wcn36xx/Kconfig \
 	drivers/net/wireless/ath/ath10k/Kconfig \
@@ -999,6 +1012,7 @@ deps_config := \
 	drivers/net/can/cc770/Kconfig \
 	drivers/net/can/c_can/Kconfig \
 	drivers/net/can/Kconfig \
+	drivers/net/pse-pd/Kconfig \
 	drivers/net/phy/Kconfig \
 	drivers/net/ipa/Kconfig \
 	drivers/net/hippi/Kconfig \
