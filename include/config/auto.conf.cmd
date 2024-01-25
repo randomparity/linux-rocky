@@ -131,6 +131,7 @@ deps_config := \
 	fs/ext4/Kconfig \
 	fs/ext2/Kconfig \
 	fs/Kconfig \
+	drivers/dpll/Kconfig \
 	drivers/hte/Kconfig \
 	drivers/most/Kconfig \
 	drivers/counter/Kconfig \
