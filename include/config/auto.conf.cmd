@@ -336,6 +336,7 @@ deps_config := \
 	drivers/platform/chrome/Kconfig \
 	drivers/platform/goldfish/Kconfig \
 	drivers/platform/mips/Kconfig \
+	drivers/platform/x86/intel/uncore-frequency/Kconfig \
 	drivers/platform/x86/intel/speed_select_if/Kconfig \
 	drivers/platform/x86/intel/pmt/Kconfig \
 	drivers/platform/x86/intel/pmc/Kconfig \
