@@ -163,6 +163,7 @@ deps_config := \
 	drivers/gpu/trace/Kconfig \
 	drivers/android/Kconfig \
 	drivers/thunderbolt/Kconfig \
+	drivers/ras/amd/atl/Kconfig \
 	arch/x86/ras/Kconfig \
 	drivers/ras/Kconfig \
 	drivers/perf/amlogic/Kconfig \
