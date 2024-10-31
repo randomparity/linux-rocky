@@ -1097,6 +1097,7 @@ deps_config := \
 	drivers/net/ethernet/mellanox/Kconfig \
 	drivers/net/ethernet/mediatek/Kconfig \
 	drivers/net/ethernet/marvell/prestera/Kconfig \
+	drivers/net/ethernet/marvell/octeon_ep_vf/Kconfig \
 	drivers/net/ethernet/marvell/octeon_ep/Kconfig \
 	drivers/net/ethernet/marvell/octeontx2/Kconfig \
 	drivers/net/ethernet/marvell/Kconfig \
