@@ -4,6 +4,7 @@ deps_config := \
 	lib/kunit/Kconfig \
 	drivers/hwtracing/coresight/Kconfig \
 	arch/arm64/Kconfig.debug \
+	samples/rust/Kconfig \
 	samples/Kconfig \
 	kernel/trace/rv/Kconfig \
 	kernel/trace/Kconfig \
@@ -181,6 +182,7 @@ deps_config := \
 	drivers/phy/samsung/Kconfig \
 	drivers/phy/rockchip/Kconfig \
 	drivers/phy/renesas/Kconfig \
+	drivers/phy/realtek/Kconfig \
 	drivers/phy/ralink/Kconfig \
 	drivers/phy/qualcomm/Kconfig \
 	drivers/phy/mscc/Kconfig \
@@ -357,14 +359,17 @@ deps_config := \
 	drivers/platform/x86/intel/uncore-frequency/Kconfig \
 	drivers/platform/x86/intel/wmi/Kconfig \
 	drivers/platform/x86/intel/speed_select_if/Kconfig \
+	drivers/platform/x86/intel/telemetry/Kconfig \
 	drivers/platform/x86/intel/pmt/Kconfig \
 	drivers/platform/x86/intel/pmc/Kconfig \
 	drivers/platform/x86/intel/int3472/Kconfig \
 	drivers/platform/x86/intel/int33fe/Kconfig \
 	drivers/platform/x86/intel/int1092/Kconfig \
 	drivers/platform/x86/intel/ifs/Kconfig \
+	drivers/platform/x86/intel/atomisp2/Kconfig \
 	drivers/platform/x86/intel/Kconfig \
 	drivers/platform/x86/dell/Kconfig \
+	drivers/platform/x86/amd/pmc/Kconfig \
 	drivers/platform/x86/amd/pmf/Kconfig \
 	drivers/platform/x86/amd/Kconfig \
 	drivers/platform/x86/Kconfig \
@@ -459,15 +464,16 @@ deps_config := \
 	drivers/virt/vboxguest/Kconfig \
 	drivers/virt/Kconfig \
 	drivers/vlynq/Kconfig \
+	virt/lib/Kconfig \
 	drivers/vfio/fsl-mc/Kconfig \
 	drivers/vfio/mdev/Kconfig \
 	drivers/vfio/platform/reset/Kconfig \
 	drivers/vfio/platform/Kconfig \
+	drivers/vfio/pci/nvgrace-gpu/Kconfig \
 	drivers/vfio/pci/mlx5/Kconfig \
 	drivers/vfio/pci/Kconfig \
 	drivers/vfio/Kconfig \
 	drivers/uio/Kconfig \
-	drivers/auxdisplay/Kconfig \
 	drivers/dca/Kconfig \
 	drivers/dma-buf/heaps/Kconfig \
 	drivers/dma-buf/Kconfig \
@@ -646,6 +652,7 @@ deps_config := \
 	drivers/video/logo/Kconfig \
 	drivers/video/console/Kconfig \
 	drivers/video/backlight/Kconfig \
+	drivers/video/fbdev/core/Kconfig \
 	drivers/video/fbdev/mmp/fb/Kconfig \
 	drivers/video/fbdev/mmp/panel/Kconfig \
 	drivers/video/fbdev/mmp/hw/Kconfig \
@@ -657,6 +664,7 @@ deps_config := \
 	drivers/video/fbdev/omap/Kconfig \
 	drivers/video/fbdev/geode/Kconfig \
 	drivers/video/fbdev/Kconfig \
+	drivers/gpu/drm/imagination/Kconfig \
 	drivers/gpu/drm/sprd/Kconfig \
 	drivers/gpu/drm/solomon/Kconfig \
 	drivers/gpu/drm/gud/Kconfig \
@@ -703,6 +711,7 @@ deps_config := \
 	drivers/gpu/drm/omapdrm/Kconfig \
 	drivers/gpu/drm/sun4i/Kconfig \
 	drivers/gpu/drm/renesas/shmobile/Kconfig \
+	drivers/gpu/drm/renesas/rz-du/Kconfig \
 	drivers/gpu/drm/renesas/rcar-du/Kconfig \
 	drivers/gpu/drm/renesas/Kconfig \
 	drivers/gpu/drm/atmel-hlcdc/Kconfig \
@@ -714,7 +723,11 @@ deps_config := \
 	drivers/gpu/drm/vmwgfx/Kconfig \
 	drivers/gpu/drm/rockchip/Kconfig \
 	drivers/gpu/drm/exynos/Kconfig \
+	drivers/gpu/drm/vkms/Kconfig \
 	drivers/gpu/drm/kmb/Kconfig \
+	drivers/gpu/drm/xe/Kconfig.profile \
+	drivers/gpu/drm/xe/Kconfig.debug \
+	drivers/gpu/drm/xe/Kconfig \
 	drivers/gpu/drm/i915/Kconfig.profile \
 	drivers/gpu/drm/i915/Kconfig.debug \
 	drivers/gpu/drm/i915/Kconfig \
@@ -733,6 +746,7 @@ deps_config := \
 	drivers/gpu/host1x/Kconfig \
 	drivers/gpu/vga/Kconfig \
 	drivers/char/agp/Kconfig \
+	drivers/auxdisplay/Kconfig \
 	drivers/video/Kconfig \
 	drivers/media/dvb-frontends/drx39xyj/Kconfig \
 	drivers/media/dvb-frontends/cxd2880/Kconfig \
@@ -950,7 +964,6 @@ deps_config := \
 	drivers/net/ieee802154/Kconfig \
 	drivers/net/wan/Kconfig \
 	drivers/net/wireless/virtual/Kconfig \
-	drivers/net/wireless/legacy/Kconfig \
 	drivers/net/wireless/quantenna/qtnfmac/Kconfig \
 	drivers/net/wireless/quantenna/Kconfig \
 	drivers/net/wireless/zydas/zd1211rw/Kconfig \
@@ -996,7 +1009,6 @@ deps_config := \
 	drivers/net/wireless/intel/iwlegacy/Kconfig \
 	drivers/net/wireless/intel/ipw2x00/Kconfig \
 	drivers/net/wireless/intel/Kconfig \
-	drivers/net/wireless/cisco/Kconfig \
 	drivers/net/wireless/broadcom/brcm80211/brcmfmac/Kconfig \
 	drivers/net/wireless/broadcom/brcm80211/Kconfig \
 	drivers/net/wireless/broadcom/b43legacy/Kconfig \
@@ -1038,6 +1050,8 @@ deps_config := \
 	drivers/net/can/c_can/Kconfig \
 	drivers/net/can/Kconfig \
 	drivers/net/pse-pd/Kconfig \
+	drivers/net/phy/qcom/Kconfig \
+	drivers/net/phy/aquantia/Kconfig \
 	drivers/net/phy/Kconfig \
 	drivers/net/ipa/Kconfig \
 	drivers/net/hippi/Kconfig \
@@ -1407,11 +1421,11 @@ deps_config := \
 	block/Kconfig.iosched \
 	block/partitions/Kconfig \
 	block/Kconfig \
+	kernel/module/Kconfig \
 	scripts/gcc-plugins/Kconfig \
 	kernel/gcov/Kconfig \
 	arch/arm64/crypto/Kconfig \
 	virt/kvm/Kconfig \
-	virt/lib/Kconfig \
 	arch/arm64/kvm/Kconfig \
 	drivers/acpi/pmic/Kconfig \
 	drivers/acpi/arm64/Kconfig \
