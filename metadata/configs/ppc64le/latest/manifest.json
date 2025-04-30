@@ -1,9 +1,9 @@
 {
-  "nvr": "kernel-5.14.0-503.38.1.el9_5",
-  "tag": "rhel9-5.14.0-503.38.1.el9_5",
+  "nvr": "kernel-5.14.0-503.40.1.el9_5",
+  "tag": "rhel9-5.14.0-503.40.1.el9_5",
   "arch": "ppc64le",
   "files": [
-    { "name": "kernel-5.14.0-503.38.1.el9_5.ppc64le.resolved.config", "bytes": 164758, "sha256": "270dff1490be235791cc87c9ce0d5d295c7534069f0ea06661e3ac75a972f941" },
+    { "name": "kernel-5.14.0-503.40.1.el9_5.ppc64le.resolved.config", "bytes": 164758, "sha256": "270dff1490be235791cc87c9ce0d5d295c7534069f0ea06661e3ac75a972f941" },
     { "name": "kernel-5.14.0-ppc64le.config", "bytes": 165274, "sha256": "4c1cc96307bc2b1422d41a265daf2f94e36eb098b56bbdcd2f7043e59d68edae" }
   ]
 }
