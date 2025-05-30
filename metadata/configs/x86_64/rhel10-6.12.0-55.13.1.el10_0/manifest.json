@@ -1,0 +1,10 @@
+{
+  "nvr": "kernel-6.12.0-55.13.1.el10_0",
+  "tag": "rhel10-6.12.0-55.13.1.el10_0",
+  "arch": "x86_64",
+  "files": [
+    { "name": "kernel-6.12.0-55.13.1.el10_0.x86_64.resolved.config", "bytes": 197794, "sha256": "92d8cefeb235bfd2aae6edc256d1c0f40a24df7826d95fefbb9f272d1c8f5542" },
+    { "name": "kernel-6.12.0-x86_64-automotive.config", "bytes": 198040, "sha256": "dd7ee92ef7fda04d034d76da4ebce59abb2a0bd156b7a605e8e4bbef8fdd5ba3" },
+    { "name": "kernel-6.12.0-x86_64.config", "bytes": 249516, "sha256": "c9c77eef1df982266114cef0bf6e589ff9458d8e6f19d90e02442a3b8c87d8eb" }
+  ]
+}
