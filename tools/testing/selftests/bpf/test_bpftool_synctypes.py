@@ -1,4 +1,4 @@
-#! /usr/bin/python3 -s
+#! /usr/bin/python3
 # SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 #
 # Copyright (C) 2021 Isovalent, Inc.

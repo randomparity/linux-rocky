@@ -579,6 +579,7 @@ deps_config := \
 	sound/synth/Kconfig \
 	sound/x86/Kconfig \
 	sound/soc/generic/Kconfig \
+	sound/soc/sdw_utils/Kconfig \
 	sound/soc/codecs/Kconfig \
 	sound/soc/xtensa/Kconfig \
 	sound/soc/xilinx/Kconfig \
@@ -649,6 +650,8 @@ deps_config := \
 	sound/core/Kconfig \
 	sound/oss/dmasound/Kconfig \
 	sound/Kconfig \
+	drivers/accel/ivpu/Kconfig \
+	drivers/accel/Kconfig \
 	drivers/video/logo/Kconfig \
 	drivers/video/console/Kconfig \
 	drivers/video/backlight/Kconfig \
@@ -672,6 +675,7 @@ deps_config := \
 	drivers/gpu/drm/tidss/Kconfig \
 	drivers/gpu/drm/mcde/Kconfig \
 	drivers/gpu/drm/aspeed/Kconfig \
+	drivers/gpu/drm/panthor/Kconfig \
 	drivers/gpu/drm/panfrost/Kconfig \
 	drivers/gpu/drm/lima/Kconfig \
 	drivers/gpu/drm/vboxvideo/Kconfig \
@@ -856,6 +860,7 @@ deps_config := \
 	drivers/media/v4l2-core/Kconfig \
 	drivers/media/cec/usb/rainshadow/Kconfig \
 	drivers/media/cec/usb/pulse8/Kconfig \
+	drivers/media/cec/usb/extron-da-hd-4k-plus/Kconfig \
 	drivers/media/cec/usb/Kconfig \
 	drivers/media/cec/platform/Kconfig \
 	drivers/media/cec/i2c/Kconfig \
@@ -1117,6 +1122,9 @@ deps_config := \
 	drivers/net/ethernet/marvell/Kconfig \
 	drivers/net/ethernet/xscale/Kconfig \
 	drivers/net/ethernet/microsoft/Kconfig \
+	drivers/net/ethernet/intel/idpf/Kconfig \
+	drivers/net/ethernet/intel/libie/Kconfig \
+	drivers/net/ethernet/intel/libeth/Kconfig \
 	drivers/net/ethernet/intel/Kconfig \
 	drivers/net/ethernet/ibm/emac/Kconfig \
 	drivers/net/ethernet/ibm/Kconfig \
@@ -1285,6 +1293,7 @@ deps_config := \
 	drivers/firmware/xilinx/Kconfig \
 	drivers/firmware/tegra/Kconfig \
 	drivers/firmware/smccc/Kconfig \
+	drivers/firmware/qcom/Kconfig \
 	drivers/firmware/psci/Kconfig \
 	drivers/firmware/meson/Kconfig \
 	drivers/firmware/imx/Kconfig \
@@ -1447,6 +1456,7 @@ deps_config := \
 	arch/arm64/Kconfig.platforms \
 	arch/arm64/Kconfig \
 	arch/Kconfig \
+	kernel/Kconfig.kexec \
 	usr/Kconfig \
 	kernel/rcu/Kconfig \
 	kernel/Kconfig.preempt \

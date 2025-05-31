@@ -1,4 +1,4 @@
-#! /usr/bin/python3 -s
+#! /usr/bin/python3
 
 from enum import Enum
 

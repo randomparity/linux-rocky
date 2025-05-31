@@ -1,4 +1,4 @@
-#! /usr/bin/python3 -s
+#! /usr/bin/python3
 # -*- coding: utf-8; mode: python -*-
 # pylint: disable=C0330, R0903, R0912
 

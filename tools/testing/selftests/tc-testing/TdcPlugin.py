@@ -1,4 +1,4 @@
-#! /usr/bin/python3 -s
+#! /usr/bin/python3
 
 class TdcPlugin:
     def __init__(self):
