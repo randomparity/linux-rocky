@@ -1,9 +1,0 @@
-{
-  "nvr": "kernel-6.12.0-55.16.1.el10_0",
-  "tag": "rhel10-6.12.0-55.16.1.el10_0",
-  "arch": "ppc64le",
-  "files": [
-    { "name": "kernel-6.12.0-55.16.1.el10_0.ppc64le.resolved.config", "bytes": 179879, "sha256": "6f933eb726fc462403aea7763f93c8e2830da1b6a03aed16fb5947154516009c" },
-    { "name": "kernel-6.12.0-ppc64le.config", "bytes": 180760, "sha256": "3ea5a80c90ee48e063b66eb9432dd57e15f01e19cad252d31a139a325cf3a0b5" }
-  ]
-}
