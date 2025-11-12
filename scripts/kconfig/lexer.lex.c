@@ -2232,6 +2232,7 @@ char *yytext;
 #include <stdlib.h>
 #include <string.h>
 
+#include <xalloc.h>
 #include "lkc.h"
 #include "parser.tab.h"
 

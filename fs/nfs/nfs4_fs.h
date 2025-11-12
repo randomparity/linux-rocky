@@ -23,6 +23,7 @@
 #define NFS4_MAX_LOOP_ON_RECOVER (10)
 
 #include <linux/seqlock.h>
+#include <linux/filelock.h>
 
 struct idmap;
 
@@ -66,8 +67,7 @@ struct nfs4_minor_version_ops {
 	void	(*free_lock_state)(struct nfs_server *,
 			struct nfs4_lock_state *);
 	int	(*test_and_free_expired)(struct nfs_server *,
-					 const nfs4_stateid *,
-					 const struct cred *);
+					 nfs4_stateid *, const struct cred *);
 	struct nfs_seqid *
 		(*alloc_seqid)(struct nfs_seqid_counter *, gfp_t);
 	void	(*session_trunk)(struct rpc_clnt *clnt,

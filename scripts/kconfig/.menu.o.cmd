@@ -1,8 +1,9 @@
-cmd_scripts/kconfig/menu.o := gcc -Wp,-MMD,scripts/kconfig/.menu.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu11       -c -o scripts/kconfig/menu.o scripts/kconfig/menu.c
+cmd_scripts/kconfig/menu.o := gcc -Wp,-MMD,scripts/kconfig/.menu.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu11   -I ./scripts/include     -c -o scripts/kconfig/menu.o scripts/kconfig/menu.c
 
 source_scripts/kconfig/menu.o := scripts/kconfig/menu.c
 
 deps_scripts/kconfig/menu.o := \
+  scripts/include/xalloc.h \
   scripts/kconfig/lkc.h \
     $(wildcard include/config/prefix) \
   scripts/kconfig/expr.h \

@@ -1,9 +1,10 @@
-cmd_scripts/kconfig/confdata.o := gcc -Wp,-MMD,scripts/kconfig/.confdata.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu11       -c -o scripts/kconfig/confdata.o scripts/kconfig/confdata.c
+cmd_scripts/kconfig/confdata.o := gcc -Wp,-MMD,scripts/kconfig/.confdata.o.d -Wall -Wmissing-prototypes -Wstrict-prototypes -O2 -fomit-frame-pointer -std=gnu11   -I ./scripts/include     -c -o scripts/kconfig/confdata.o scripts/kconfig/confdata.c
 
 source_scripts/kconfig/confdata.o := scripts/kconfig/confdata.c
 
 deps_scripts/kconfig/confdata.o := \
     $(wildcard include/config/FOO) \
+  scripts/include/xalloc.h \
   scripts/kconfig/lkc.h \
     $(wildcard include/config/prefix) \
   scripts/kconfig/expr.h \

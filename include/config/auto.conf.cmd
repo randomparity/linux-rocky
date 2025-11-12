@@ -6,6 +6,15 @@ deps_config := \
 	arch/arm64/Kconfig.debug \
 	samples/rust/Kconfig \
 	samples/Kconfig \
+	kernel/trace/rv/monitors/sncid/Kconfig \
+	kernel/trace/rv/monitors/snep/Kconfig \
+	kernel/trace/rv/monitors/scpd/Kconfig \
+	kernel/trace/rv/monitors/snroc/Kconfig \
+	kernel/trace/rv/monitors/sco/Kconfig \
+	kernel/trace/rv/monitors/tss/Kconfig \
+	kernel/trace/rv/monitors/sched/Kconfig \
+	kernel/trace/rv/monitors/wwnr/Kconfig \
+	kernel/trace/rv/monitors/wip/Kconfig \
 	kernel/trace/rv/Kconfig \
 	kernel/trace/Kconfig \
 	kernel/rcu/Kconfig.debug \
@@ -279,6 +288,7 @@ deps_config := \
 	drivers/pmdomain/mediatek/Kconfig \
 	drivers/pmdomain/imx/Kconfig \
 	drivers/pmdomain/bcm/Kconfig \
+	drivers/pmdomain/arm/Kconfig \
 	drivers/pmdomain/amlogic/Kconfig \
 	drivers/pmdomain/actions/Kconfig \
 	drivers/pmdomain/Kconfig \
@@ -436,7 +446,6 @@ deps_config := \
 	drivers/staging/iio/Kconfig \
 	drivers/staging/vt6656/Kconfig \
 	drivers/staging/vt6655/Kconfig \
-	drivers/staging/octeon-usb/Kconfig \
 	drivers/staging/octeon/Kconfig \
 	drivers/staging/rts5208/Kconfig \
 	drivers/staging/rtl8188eu/Kconfig \
@@ -469,6 +478,7 @@ deps_config := \
 	drivers/vfio/mdev/Kconfig \
 	drivers/vfio/platform/reset/Kconfig \
 	drivers/vfio/platform/Kconfig \
+	drivers/vfio/pci/qat/Kconfig \
 	drivers/vfio/pci/nvgrace-gpu/Kconfig \
 	drivers/vfio/pci/mlx5/Kconfig \
 	drivers/vfio/pci/Kconfig \
@@ -486,9 +496,9 @@ deps_config := \
 	drivers/dma/dw-edma/Kconfig \
 	drivers/dma/dw/Kconfig \
 	drivers/dma/qcom/Kconfig \
-	drivers/dma/ptdma/Kconfig \
 	drivers/dma/mediatek/Kconfig \
 	drivers/dma/bestcomm/Kconfig \
+	drivers/dma/amd/Kconfig \
 	drivers/dma/Kconfig \
 	drivers/rtc/Kconfig \
 	drivers/edac/Kconfig \
@@ -541,6 +551,7 @@ deps_config := \
 	drivers/usb/typec/tcpm/Kconfig \
 	drivers/usb/typec/Kconfig \
 	drivers/usb/gadget/legacy/Kconfig \
+	drivers/usb/gadget/udc/cdns2/Kconfig \
 	drivers/usb/gadget/udc/aspeed-vhub/Kconfig \
 	drivers/usb/gadget/udc/bdc/Kconfig \
 	drivers/usb/gadget/udc/Kconfig \
@@ -567,11 +578,12 @@ deps_config := \
 	drivers/usb/core/Kconfig \
 	drivers/usb/common/Kconfig \
 	drivers/usb/Kconfig \
+	drivers/hid/usbhid/Kconfig \
+	drivers/hid/intel-thc-hid/Kconfig \
 	drivers/hid/surface-hid/Kconfig \
 	drivers/hid/amd-sfh-hid/Kconfig \
 	drivers/hid/intel-ish-hid/Kconfig \
 	drivers/hid/i2c-hid/Kconfig \
-	drivers/hid/usbhid/Kconfig \
 	drivers/hid/bpf/Kconfig \
 	drivers/hid/Kconfig \
 	sound/virtio/Kconfig \
@@ -599,6 +611,7 @@ deps_config := \
 	sound/soc/sof/amd/Kconfig \
 	sound/soc/sof/Kconfig \
 	sound/soc/sh/Kconfig \
+	sound/soc/sdca/Kconfig \
 	sound/soc/samsung/Kconfig \
 	sound/soc/rockchip/Kconfig \
 	sound/soc/qcom/Kconfig \
@@ -672,6 +685,7 @@ deps_config := \
 	drivers/gpu/drm/solomon/Kconfig \
 	drivers/gpu/drm/gud/Kconfig \
 	drivers/gpu/drm/xlnx/Kconfig \
+	drivers/gpu/drm/adp/Kconfig \
 	drivers/gpu/drm/tidss/Kconfig \
 	drivers/gpu/drm/mcde/Kconfig \
 	drivers/gpu/drm/aspeed/Kconfig \
@@ -743,8 +757,8 @@ deps_config := \
 	drivers/gpu/drm/radeon/Kconfig \
 	drivers/gpu/drm/arm/display/Kconfig \
 	drivers/gpu/drm/arm/Kconfig \
-	drivers/gpu/drm/i2c/Kconfig \
 	drivers/gpu/drm/display/Kconfig \
+	drivers/gpu/drm/clients/Kconfig \
 	drivers/gpu/drm/Kconfig \
 	drivers/gpu/ipu-v3/Kconfig \
 	drivers/gpu/host1x/Kconfig \
@@ -1290,6 +1304,7 @@ deps_config := \
 	drivers/mtd/parsers/Kconfig \
 	drivers/mtd/Kconfig \
 	drivers/gnss/Kconfig \
+	drivers/fwctl/Kconfig \
 	drivers/firmware/xilinx/Kconfig \
 	drivers/firmware/tegra/Kconfig \
 	drivers/firmware/smccc/Kconfig \
@@ -1302,6 +1317,8 @@ deps_config := \
 	drivers/firmware/cirrus/Kconfig \
 	drivers/firmware/broadcom/Kconfig \
 	drivers/firmware/arm_ffa/Kconfig \
+	drivers/firmware/arm_scmi/vendors/imx/Kconfig \
+	drivers/firmware/arm_scmi/transports/Kconfig \
 	drivers/firmware/arm_scmi/Kconfig \
 	drivers/firmware/Kconfig \
 	drivers/connector/Kconfig \
