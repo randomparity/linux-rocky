@@ -1,9 +1,9 @@
 {
-  "nvr": "kernel-5.14.0-611.5.1.el9_7",
-  "tag": "rhel9-5.14.0-611.5.1.el9_7",
+  "nvr": "kernel-5.14.0-611.9.1.el9_7",
+  "tag": "rhel9-5.14.0-611.9.1.el9_7",
   "arch": "s390x",
   "files": [
-    { "name": "kernel-5.14.0-611.5.1.el9_7.s390x.resolved.config", "bytes": 41817, "sha256": "f3dc7615c1ccdbd78686d2e9a09a69a7fd927cd5d1721f7e7cc1c2d784938330" },
+    { "name": "kernel-5.14.0-611.9.1.el9_7.s390x.resolved.config", "bytes": 41817, "sha256": "f3dc7615c1ccdbd78686d2e9a09a69a7fd927cd5d1721f7e7cc1c2d784938330" },
     { "name": "kernel-5.14.0-s390x-zfcpdump.config", "bytes": 42673, "sha256": "ddcd7db4e4d1f31a495e5f40694efb19eccd1067605319a83afaefccae6161ad" },
     { "name": "kernel-5.14.0-s390x.config", "bytes": 102101, "sha256": "335342cc90ed397eb2d4af8a05d2033088a0a41267826d5f63869819116c63bc" }
   ]
