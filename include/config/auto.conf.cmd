@@ -578,6 +578,8 @@ deps_config := \
 	drivers/pps/clients/Kconfig \
 	drivers/pps/generators/Kconfig \
 	drivers/ptp/Kconfig \
+	drivers/dpll/Kconfig \
+	drivers/dpll/zl3073x/Kconfig \
 	drivers/pinctrl/Kconfig \
 	drivers/pinctrl/actions/Kconfig \
 	drivers/pinctrl/aspeed/Kconfig \
@@ -1458,7 +1460,6 @@ deps_config := \
 	drivers/hte/Kconfig \
 	drivers/cdx/Kconfig \
 	drivers/cdx/controller/Kconfig \
-	drivers/dpll/Kconfig \
 	fs/Kconfig \
 	fs/ext2/Kconfig \
 	fs/ext4/Kconfig \
