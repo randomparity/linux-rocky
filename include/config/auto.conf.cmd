@@ -6,12 +6,17 @@ deps_config := \
 	arch/arm64/Kconfig.debug \
 	samples/rust/Kconfig \
 	samples/Kconfig \
-	kernel/trace/rv/monitors/sncid/Kconfig \
+	kernel/trace/rv/monitors/sleep/Kconfig \
+	kernel/trace/rv/monitors/pagefault/Kconfig \
+	kernel/trace/rv/monitors/rtapp/Kconfig \
+	kernel/trace/rv/monitors/opid/Kconfig \
+	kernel/trace/rv/monitors/sssw/Kconfig \
+	kernel/trace/rv/monitors/nrp/Kconfig \
+	kernel/trace/rv/monitors/sts/Kconfig \
 	kernel/trace/rv/monitors/snep/Kconfig \
 	kernel/trace/rv/monitors/scpd/Kconfig \
 	kernel/trace/rv/monitors/snroc/Kconfig \
 	kernel/trace/rv/monitors/sco/Kconfig \
-	kernel/trace/rv/monitors/tss/Kconfig \
 	kernel/trace/rv/monitors/sched/Kconfig \
 	kernel/trace/rv/monitors/wwnr/Kconfig \
 	kernel/trace/rv/monitors/wip/Kconfig \
@@ -34,6 +39,7 @@ deps_config := \
 	lib/crypto/Kconfig \
 	lib/math/Kconfig \
 	lib/Kconfig \
+	crypto/krb5/Kconfig \
 	certs/Kconfig \
 	crypto/asymmetric_keys/Kconfig \
 	drivers/crypto/amlogic/Kconfig \
@@ -91,6 +97,7 @@ deps_config := \
 	fs/sysv/Kconfig \
 	fs/pstore/Kconfig \
 	fs/romfs/Kconfig \
+	fs/resctrl/Kconfig \
 	fs/qnx6/Kconfig \
 	fs/qnx4/Kconfig \
 	fs/hpfs/Kconfig \
@@ -380,6 +387,7 @@ deps_config := \
 	drivers/platform/x86/dell/Kconfig \
 	drivers/platform/x86/amd/pmc/Kconfig \
 	drivers/platform/x86/amd/pmf/Kconfig \
+	drivers/platform/x86/amd/hsmp/Kconfig \
 	drivers/platform/x86/amd/Kconfig \
 	drivers/platform/x86/Kconfig \
 	drivers/platform/Kconfig \
@@ -522,6 +530,7 @@ deps_config := \
 	drivers/infiniband/hw/mlx4/Kconfig \
 	drivers/infiniband/hw/mana/Kconfig \
 	drivers/infiniband/hw/irdma/Kconfig \
+	drivers/infiniband/hw/ionic/Kconfig \
 	drivers/infiniband/hw/efa/Kconfig \
 	drivers/infiniband/hw/cxgb4/Kconfig \
 	drivers/infiniband/hw/qib/Kconfig \
@@ -592,6 +601,12 @@ deps_config := \
 	sound/soc/generic/Kconfig \
 	sound/soc/sdw_utils/Kconfig \
 	sound/soc/codecs/Kconfig \
+	sound/soc/sof/xtensa/Kconfig \
+	sound/soc/sof/mediatek/Kconfig \
+	sound/soc/sof/intel/Kconfig \
+	sound/soc/sof/imx/Kconfig \
+	sound/soc/sof/amd/Kconfig \
+	sound/soc/sof/Kconfig \
 	sound/soc/xtensa/Kconfig \
 	sound/soc/xilinx/Kconfig \
 	sound/soc/ux500/Kconfig \
@@ -603,12 +618,6 @@ deps_config := \
 	sound/soc/sti/Kconfig \
 	sound/soc/sprd/Kconfig \
 	sound/soc/spear/Kconfig \
-	sound/soc/sof/xtensa/Kconfig \
-	sound/soc/sof/mediatek/Kconfig \
-	sound/soc/sof/intel/Kconfig \
-	sound/soc/sof/imx/Kconfig \
-	sound/soc/sof/amd/Kconfig \
-	sound/soc/sof/Kconfig \
 	sound/soc/sh/Kconfig \
 	sound/soc/sdca/Kconfig \
 	sound/soc/samsung/Kconfig \
@@ -653,8 +662,15 @@ deps_config := \
 	sound/aoa/Kconfig \
 	sound/ac97/Kconfig \
 	sound/ppc/Kconfig \
+	sound/hda/core/Kconfig \
+	sound/hda/codecs/side-codecs/Kconfig \
+	sound/hda/codecs/hdmi/Kconfig \
+	sound/hda/codecs/cirrus/Kconfig \
+	sound/hda/codecs/realtek/Kconfig \
+	sound/hda/codecs/Kconfig \
+	sound/hda/controllers/Kconfig \
+	sound/hda/common/Kconfig \
 	sound/hda/Kconfig \
-	sound/pci/hda/Kconfig \
 	sound/pci/Kconfig \
 	sound/isa/Kconfig \
 	sound/drivers/Kconfig \
@@ -679,9 +695,11 @@ deps_config := \
 	drivers/video/fbdev/omap/Kconfig \
 	drivers/video/fbdev/geode/Kconfig \
 	drivers/video/fbdev/Kconfig \
+	drivers/gpu/drm/tyr/Kconfig \
 	drivers/gpu/drm/imagination/Kconfig \
 	drivers/gpu/drm/sprd/Kconfig \
 	drivers/gpu/drm/solomon/Kconfig \
+	drivers/gpu/drm/sitronix/Kconfig \
 	drivers/gpu/drm/gud/Kconfig \
 	drivers/gpu/drm/xlnx/Kconfig \
 	drivers/gpu/drm/adp/Kconfig \
@@ -709,6 +727,7 @@ deps_config := \
 	drivers/gpu/drm/v3d/Kconfig \
 	drivers/gpu/drm/ingenic/Kconfig \
 	drivers/gpu/drm/imx/dcss/Kconfig \
+	drivers/gpu/drm/imx/dc/Kconfig \
 	drivers/gpu/drm/imx/Kconfig \
 	drivers/gpu/drm/sti/Kconfig \
 	drivers/gpu/drm/bridge/synopsys/Kconfig \
@@ -748,6 +767,7 @@ deps_config := \
 	drivers/gpu/drm/i915/Kconfig.profile \
 	drivers/gpu/drm/i915/Kconfig.debug \
 	drivers/gpu/drm/i915/Kconfig \
+	drivers/gpu/drm/nova/Kconfig \
 	drivers/gpu/drm/nouveau/Kconfig \
 	drivers/gpu/drm/amd/amdkfd/Kconfig \
 	drivers/gpu/drm/amd/display/Kconfig \
@@ -756,8 +776,10 @@ deps_config := \
 	drivers/gpu/drm/radeon/Kconfig \
 	drivers/gpu/drm/arm/display/Kconfig \
 	drivers/gpu/drm/arm/Kconfig \
+	drivers/gpu/drm/sysfb/Kconfig \
 	drivers/gpu/drm/display/Kconfig \
 	drivers/gpu/drm/clients/Kconfig \
+	drivers/gpu/drm/Kconfig.debug \
 	drivers/gpu/drm/Kconfig \
 	drivers/gpu/ipu-v3/Kconfig \
 	drivers/gpu/host1x/Kconfig \
@@ -1070,7 +1092,9 @@ deps_config := \
 	drivers/net/can/c_can/Kconfig \
 	drivers/net/can/Kconfig \
 	drivers/net/pse-pd/Kconfig \
+	drivers/net/phy/realtek/Kconfig \
 	drivers/net/phy/qcom/Kconfig \
+	drivers/net/phy/mediatek/Kconfig \
 	drivers/net/phy/aquantia/Kconfig \
 	drivers/net/phy/Kconfig \
 	drivers/net/ipa/Kconfig \
