@@ -171,6 +171,7 @@ static int can_create(struct net *net, struct socket *sock, int protocol,
 		/* release sk on errors */
 		sock_orphan(sk);
 		sock_put(sk);
+		sock->sk = NULL;
 	}
 
  errout:
@@ -680,7 +681,7 @@ static int can_rcv(struct sk_buff *skb, struct net_device *dev,
 		pr_warn_once("PF_CAN: dropped non conform CAN skbuff: dev type %d, len %d\n",
 			     dev->type, skb->len);
 
-		kfree_skb(skb);
+		kfree_skb_reason(skb, SKB_DROP_REASON_CAN_RX_INVALID_FRAME);
 		return NET_RX_DROP;
 	}
 
@@ -695,7 +696,7 @@ static int canfd_rcv(struct sk_buff *skb, struct net_device *dev,
 		pr_warn_once("PF_CAN: dropped non conform CAN FD skbuff: dev type %d, len %d\n",
 			     dev->type, skb->len);
 
-		kfree_skb(skb);
+		kfree_skb_reason(skb, SKB_DROP_REASON_CANFD_RX_INVALID_FRAME);
 		return NET_RX_DROP;
 	}
 
@@ -710,7 +711,7 @@ static int canxl_rcv(struct sk_buff *skb, struct net_device *dev,
 		pr_warn_once("PF_CAN: dropped non conform CAN XL skbuff: dev type %d, len %d\n",
 			     dev->type, skb->len);
 
-		kfree_skb(skb);
+		kfree_skb_reason(skb, SKB_DROP_REASON_CANXL_RX_INVALID_FRAME);
 		return NET_RX_DROP;
 	}
 
@@ -822,7 +823,7 @@ static void can_pernet_exit(struct net *net)
 	if (IS_ENABLED(CONFIG_PROC_FS)) {
 		can_remove_proc(net);
 		if (stats_timer)
-			del_timer_sync(&net->can.stattimer);
+			timer_delete_sync(&net->can.stattimer);
 	}
 
 	kfree(net->can.rx_alldev_list);
