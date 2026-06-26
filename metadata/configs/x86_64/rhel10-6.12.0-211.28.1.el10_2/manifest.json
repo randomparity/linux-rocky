@@ -1,0 +1,9 @@
+{
+  "nvr": "kernel-6.12.0-211.28.1.el10_2",
+  "tag": "rhel10-6.12.0-211.28.1.el10_2",
+  "arch": "x86_64",
+  "files": [
+    { "name": "kernel-6.12.0-211.28.1.el10_2.x86_64.resolved.config", "bytes": 259627, "sha256": "228f8b717300e75dc7835905b74fae98894f4f1cf0fd5071493376977b6d7fd6" },
+    { "name": "kernel-6.12.0-x86_64.config", "bytes": 259826, "sha256": "2c427db19994bcb843d4d21cb01a002f2c8c5336257dca5d695bc8b8821f4184" }
+  ]
+}
