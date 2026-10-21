@@ -1,7 +1,8 @@
 # Working with this kernel mirror
 
 This repository mirrors RHEL-compatible Linux kernel releases from public Rocky
-Linux SRPMs. The extractor lives in `~/src/srpm-scanner`; its default `prep` mode
+Linux SRPMs. The extractor lives in
+[srpm-scanner](https://github.com/randomparity/srpm-scanner); its default `prep` mode
 runs `rpmbuild -bp` and imports the prepared source tree, including downstream
 patches. These are release snapshots, not upstream Linux development history.
 
@@ -90,8 +91,9 @@ upstream or downstream patch history.
 ## Keep imports and investigations separate
 
 Do not rerun extraction just to read an existing release. Import tooling and its
-setup instructions belong in `~/src/srpm-scanner`. The importer switches branches
-and replaces checkout contents; coordinate imports with other work. Its
+setup instructions belong in
+[srpm-scanner](https://github.com/randomparity/srpm-scanner). The importer switches
+branches and replaces checkout contents; coordinate imports with other work. Its
 `MAIN_ENFORCE_MINIMAL=1` cleanup currently excludes AGENTS.md from the keep list,
 so that option can delete this guide. Do not use it without addressing that.
 Do not delete local `.work/` caches or ignored leftovers as part of an investigation.
